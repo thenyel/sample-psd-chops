@@ -1,0 +1,49 @@
+@mainText: #5a5969;
+@whiteText: #ffffff;
+
+/**
+ * Import Fonts
+ */
+
+@font-face {
+  font-family: 'Gloriola';
+  src: url('gloriola.eot'),
+       url('gloriola.woff') format('woff'),
+       url('gloriola.ttf') format('truetype'),
+       url('gloriola.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Gloriola-l';
+  src: url('gloriola-l.eot'),
+       url('gloriola-l.woff') format('woff'),
+       url('gloriola-l.ttf') format('truetype'),
+       url('gloriola-l.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Proximanova';
+  src: url('proximanova.eot'),
+       url('proximanova.woff') format('woff'),
+       url('proximanova.ttf') format('truetype'),
+       url('proximanova.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Proximanova-b';
+  src: url('proximanova-b.eot'),
+       url('proximanova-b.woff') format('woff'),
+       url('proximanova-b.ttf') format('truetype'),
+       url('proximanova-b.svg#font') format('svg');
+}
+
+
+
+header {
+  h1 {
+    background: url(img/logo.png) no-repeat;
+    display: block;
+    height: 96px;
+    text-indent: -9999em;
+  }
+}

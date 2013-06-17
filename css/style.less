@@ -1,0 +1,212 @@
+@mainText: #5a5969;
+@whiteText: #ffffff;
+@facebookColor: #4060b3;
+@googleColor: #e66251;
+
+
+/**
+ * Import Fonts
+ */
+
+@font-face {
+  font-family: 'Gloriola';
+  src: url('./fonts/gloriola.eot'),
+       url('./fonts/gloriola.woff') format('woff'),
+       url('./fonts/gloriola.ttf') format('truetype'),
+       url('./fonts/gloriola.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Gloriola Light';
+  src: url('./fonts/gloriola-l.eot'),
+       url('./fonts/gloriola-l.woff') format('woff'),
+       url('./fonts/gloriola-l.ttf') format('truetype'),
+       url('./fonts/gloriola-l.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Proximanova';
+  src: url('./fonts/proximanova.eot'),
+       url('./fonts/proximanova.woff') format('woff'),
+       url('./fonts/proximanova.ttf') format('truetype'),
+       url('./fonts/proximanova.svg#font') format('svg');
+}
+
+@font-face {
+  font-family: 'Proximanova Bold';
+  src: url('./fonts/proximanova-b.eot'),
+       url('./fonts/proximanova-b.woff') format('woff'),
+       url('./fonts/proximanova-b.ttf') format('truetype'),
+       url('./fonts/proximanova-b.svg#font') format('svg');
+}
+
+
+.roundedCorners (@radius: 25px) {
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+  border-radius: @radius;
+}
+
+
+.socialColor (@img, @color) {
+  background: url(@img) 15px no-repeat;
+  background-color: @color;
+  padding-left: 15px;
+}
+
+
+
+
+body {
+  text-align: center;
+  color: @mainText;
+  font-size: 13px;
+}
+
+a {
+  color: @mainText;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  height: 100px;
+
+  h1 {
+    display: block;
+    float: left;
+    width: 300px;
+    margin: 38px 50px;
+    background: url(../img/logo.PNG) no-repeat;
+    display: block; 
+    text-indent: -9999em;
+  }
+
+  .topmenu {
+    font-family: 'Proximanova', 'Helvetica', 'Arial', sans-serif;
+    float: right;
+    margin: 43px 50px;
+    font-size: 11px;
+  }
+}
+
+.banner {
+  height: 383px;
+  background: url(../img/bg.JPG) no-repeat;
+
+  h1 {
+    font-family: 'Gloriola Light', 'Helvetica', 'Arial', sans-serif;
+    font-size: 3em;
+    color: @whiteText;
+    margin: 0;
+    padding-top: 70px;
+    padding-bottom: 35px;
+  }
+
+  .icon-group {
+    list-style-type: none;
+    text-align: center;
+
+    .icon {
+      display: inline;
+      margin: 0 45px;
+    }
+  }
+
+}
+
+.content {
+  margin-top: 60px;
+  text-shadow: 0px 1px 1px #CCC;
+
+  p {
+    text-align: left;
+  }
+}
+
+.social {
+    margin-top: 55px;
+    text-align: center;
+
+    div {
+      display: inline-block;
+      padding: 10px;
+      margin: 0 15px;
+      .roundedCorners(40px);
+      box-shadow:
+        inset 0 0 0 15px rgba(0,0,0, 0.25),
+        0 0 0 1px rgba(255,255,255,1);
+    }
+
+    a {
+      display: block;
+      padding: 9px 10px;
+      font-size: 10px;
+      color: white;
+      .roundedCorners(25px);
+  
+
+      span {
+        font-family: 'Proximanova', 'Helvetica', 'Arial', sans-serif;
+        display: block;
+        line-height: 23px;
+        padding: 0 15px 0 12px;
+        margin-left: 30px;
+        border-left: 1px solid grey;
+      }
+    
+    }
+
+  }
+
+
+/**
+ * Social Buttons Color
+ */
+.facebook {
+  .socialColor ('../img/icon-facebook.PNG', @facebookColor);
+}
+
+.google {
+  .socialColor ('../img/icon-google.PNG', @googleColor);
+}
+
+
+
+/**
+ * Content Styles
+ */
+.content {
+  text-align: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 15px;
+}
+
+.device {
+  float: left;
+  margin-left: 70px;
+  width: 45%;
+
+  img {
+    vertical-align: top;
+  }
+}
+
+.text-content {
+  float: left;
+  margin-left: 50px;
+  width: 35%;
+}
+
+.checklist {
+  margin-left: 25px;
+  li {
+    list-style-image:url('../img/check.PNG');
+    padding: 5px;
+    text-align: left;
+  }
+}
